@@ -1,4 +1,4 @@
-module github.com/praveen/go-bookstore
+module github.com/prashantrewar/go-bookstore-api
 
 go 1.20
 

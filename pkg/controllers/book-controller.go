@@ -6,8 +6,8 @@ import(
 	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
-	"github.com/praveen/go-bookstore/pkg/utils"
-	"github.com/praveen/go-bookstore/pkg/models"
+	"github.com/prashantrewar/go-bookstore-api/pkg/utils"
+	"github.com/prashantrewar/go-bookstore-api/pkg/models"
 )
 
 var NewBook models.Book
