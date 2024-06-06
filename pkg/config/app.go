@@ -13,10 +13,12 @@ var (
 
 func Connect() {
 	d, err := gorm.Open("mysql", "user:password@/SimpleRest?charset=utf8&parseTime=True&loc=Local")
+
 	if err != nil {
 		fmt.Println("this", err)
 		panic(err)
 	}
+
 	db = d
 }
 

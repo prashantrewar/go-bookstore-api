@@ -24,9 +24,11 @@ func GetBookById(w http.ResponseWriter, r *http.Request){
 	vars := mux.Vars(r)
 	bookId := vars["bookId"]
 	ID, err:= strconv.ParseInt(bookId,0,0)
+
 	if err != nil {
 		fmt.Println("error while parsing")
 	}
+	
 	bookDetails, _:= models.GetBookById(ID)
 	res, _ := json.Marshal(bookDetails)
 	w.Header().Set("Content-Type","pkglication/json")
